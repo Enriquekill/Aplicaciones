@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Chronometer
+        android:id="@+id/txtTiempo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnIniciar"
+        app:layout_constraintEnd_toStartOf="@+id/btnMeta"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnPausa"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageButton
+        android:id="@+id/btnIniciar"
+        android:layout_width="50dp"
+        android:layout_height="53dp"
+        android:background="#fff"
+        android:onClick="comenzarCronometro"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/listVIew"
+        app:layout_constraintEnd_toStartOf="@+id/btnIniciar2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnPausa"
+        app:layout_constraintTop_toBottomOf="@+id/txtTiempo"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/playv" />
+
+    <ImageButton
+        android:id="@+id/btnIniciar2"
+        android:layout_width="50dp"
+        android:layout_height="53dp"
+        android:background="#fff"
+        android:onClick="reiniciarCronometro"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/listVIew"
+        app:layout_constraintEnd_toStartOf="@+id/btnMeta"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnIniciar"
+        app:layout_constraintTop_toBottomOf="@+id/txtTiempo"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/undo" />
+
+    <ImageButton
+        android:id="@+id/btnMeta"
+        android:layout_width="50dp"
+        android:layout_height="53dp"
+        android:background="#fff"
+        android:onClick="registrar"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/listVIew"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtTiempo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/flagv" />
+
+    <ImageButton
+        android:id="@+id/btnPausa"
+        android:layout_width="50dp"
+        android:layout_height="53dp"
+        android:background="#fff"
+        android:onClick="pausarCronometro"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/listVIew"
+        app:layout_constraintEnd_toStartOf="@+id/txtTiempo"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/pause_buttonv" />
+
+    <ListView
+        android:id="@+id/listVIew"
+        android:layout_width="408dp"
+        android:layout_height="531dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIniciar"
+        app:layout_constraintVertical_bias="0.5" />
+</androidx.constraintlayout.widget.ConstraintLayout>

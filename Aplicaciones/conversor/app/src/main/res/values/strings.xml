@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">conversor</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="longitudTitulo">Longitud</string>
+    <string name="pesoTitulo">Peso</string>
+    <string name="temperaturaTitulo">Temperatura</string>
+    <string name="volumenTitulo">Volumen</string>
+
+    <string-array name="opcionesLongitud">
+        <item>km</item>
+        <item>m</item>
+        <item>cm</item>
+        <item>mm</item>
+        <item>mi</item>
+    </string-array>
+
+    <string-array name="opcionesVolumen">
+        <item>m3</item>
+        <item>l</item>
+        <item>ml</item>
+    </string-array>
+    <string-array name="opcionesPeso">
+        <item>ton</item>
+        <item>kg</item>
+        <item>g</item>
+        <item>mg</item>
+        <item>mig</item>
+    </string-array>
+
+    <string-array name="opcionesTemperatura">
+        <item>F</item>
+        <item>C</item>
+        <item>K</item>
+    </string-array>
+</resources>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">multimedia</string>
+
+    <string-array name="playlist">
+        <item>I kissed a girl - First to Eleven</item>
+        <item>Como hacer el logo de Microsoft con CSS</item>
+        <item>Torero - Chayane Baile</item>
+        <item>Por que las sombras se pixelean en los juegos?</item>
+        <item>Configuraciones de VSCode</item>
+        <item>Demons - Imagine Dragons</item>
+        <item>Video importado</item>
+    </string-array>
+    <string name="btn_import">boton importar</string>
+
+</resources>
